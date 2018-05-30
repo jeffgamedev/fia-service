@@ -28,12 +28,13 @@ var formNext = function(nextSection) {
   hideAllForms();
   var nextForm = $("#" + nextSection);
   nextForm.removeClass("d-none");
+  if (nextForm.length) {
+    nextForm[0].scrollIntoView();
+  }
 };
 
 $(document).ready(function() {
-
   $("form").each(function(){
       $(this).on('submit', formSubmission);
   });
-
 });
