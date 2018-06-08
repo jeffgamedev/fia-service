@@ -14,7 +14,14 @@
   <hr>
     <h6 class="text-center">Your responses are confidential and FIA does not share your information with other people and organizations. We share information with our funders about our group of participants as a whole and never with individual names.</h6>
     <hr>
-    <form id="form_section_00">
+
+    <form id="form_section_start">
+      <div class="form-group text-center">
+        <button type="submit" class="btn btn-lg btn-primary" onclick="formNext('form_section_00');">Begin <span class="glyphicon glyphicon-repeat"></span></button>
+      </div>
+    </form>
+
+    <form id="form_section_00" class="d-none">
       <div class="form-group">
         <label for="date_started" class="control-label">Date Started FIA</label>
         <input type="date" class="form-control" id="date_started" name="date_started">
@@ -24,7 +31,7 @@
         <input type="number" name="years_in_fia" class="form-control">
       </div>
       <div class="form-group">
-        <button type="submit" class="btn btn-primary" onclick="formNext('form_section_01');">Begin <span class="glyphicon glyphicon-repeat"></span></button>
+        <button type="submit" class="btn btn-primary" onclick="formNext('form_section_01');">Next <span class="glyphicon glyphicon-repeat"></span></button>
       </div>
     </form>
 
@@ -53,7 +60,7 @@
 
     	<div class="form-group"> <!-- State Button -->
     		<label for="state_id" class="control-label">State</label>
-    		<select class="form-control" id="state_id">
+    		<select class="form-control" id="state_id" name="state_id">
     			<option value="AL">Alabama</option>
     			<option value="AK">Alaska</option>
     			<option value="AZ">Arizona</option>
@@ -262,7 +269,7 @@
         <div class="form-group">
       		<label for="hh_income" class="control-label">Annual Household Income?</label>
           <br>
-          <label><input type="radio" name="hh_income" value="0_10k" checked> $0 - $10,000</label><br>
+          <label><input type="radio" name="hh_income" value="0_10k"> $0 - $10,000</label><br>
           <label><input type="radio" name="hh_income" value="11k_20k"> $11,000 - $20,000</label><br>
           <label><input type="radio" name="hh_income" value="21k_30k"> $21,000 - $30,000</label><br>
           <label><input type="radio" name="hh_income" value="31k_40k"> $31,000 - $40,000</label><br>
