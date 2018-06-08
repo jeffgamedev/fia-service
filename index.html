@@ -8,652 +8,652 @@
 <script src="js/main.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<div class="container">
-<h1 class="text-center header">Families in Action</h1>
-<h3 class="text-center header">Annual Registration</h3>
-<hr>
-  <h6 class="text-center">Your responses are confidential and FIA does not share your information with other people and organizations. We share information with our funders about our group of participants as a whole and never with individual names.</h6>
+<div class="container col-md-8">
+  <h1 class="text-center header">Families in Action</h1>
+  <h3 class="text-center header">Annual Registration</h3>
   <hr>
-  <form id="form_section_00">
-    <div class="form-group">
-      <label for="date_started" class="control-label">Date Started FIA</label>
-      <input type="date" class="form-control" id="date_started" name="date_started">
-    </div>
-    <div class="form-group">
-      <label for="years_in_fia" class="control-label">Years in FIA</label>
-      <input type="number" name="years_in_fia" class="form-control">
-    </div>
-    <div class="form-group">
-      <button type="submit" class="btn btn-primary" onclick="formNext('form_section_01');">Begin <span class="glyphicon glyphicon-repeat"></span></button>
-    </div>
-  </form>
-
-  <form id="form_section_01" class="d-none">
-  <h5>Personal Information</h5>
-  <hr>
-  <div class="form-group">
-  		<label for="full_name_id" class="control-label">Full Name</label>
-  		<input type="text" class="form-control" id="full_name_id" name="full_name">
-  	</div>
-
-  	<div class="form-group">
-  		<label for="street1_id" class="control-label">Street Address 1</label>
-  		<input type="text" class="form-control" id="street1_id" name="street1" placeholder="Street address, P.O. box, company name, c/o">
-  	</div>
-
-  	<div class="form-group">
-  		<label for="street2_id" class="control-label">Street Address 2</label>
-  		<input type="text" class="form-control" id="street2_id" name="street2" placeholder="Apartment, suite, unit, building, floor, etc.">
-  	</div>
-
-  	<div class="form-group">
-  		<label for="city_id" class="control-label">City</label>
-  		<input type="text" class="form-control" id="city_id" name="city" placeholder="City">
-  	</div>
-
-  	<div class="form-group"> <!-- State Button -->
-  		<label for="state_id" class="control-label">State</label>
-  		<select class="form-control" id="state_id">
-  			<option value="AL">Alabama</option>
-  			<option value="AK">Alaska</option>
-  			<option value="AZ">Arizona</option>
-  			<option value="AR">Arkansas</option>
-  			<option value="CA">California</option>
-  			<option value="CO">Colorado</option>
-  			<option value="CT">Connecticut</option>
-  			<option value="DE">Delaware</option>
-  			<option value="DC">District Of Columbia</option>
-  			<option value="FL">Florida</option>
-  			<option value="GA">Georgia</option>
-  			<option value="HI">Hawaii</option>
-  			<option value="ID">Idaho</option>
-  			<option value="IL">Illinois</option>
-  			<option value="IN">Indiana</option>
-  			<option value="IA">Iowa</option>
-  			<option value="KS">Kansas</option>
-  			<option value="KY">Kentucky</option>
-  			<option value="LA">Louisiana</option>
-  			<option value="ME">Maine</option>
-  			<option value="MD">Maryland</option>
-  			<option value="MA">Massachusetts</option>
-  			<option value="MI">Michigan</option>
-  			<option value="MN">Minnesota</option>
-  			<option value="MS">Mississippi</option>
-  			<option value="MO">Missouri</option>
-  			<option value="MT">Montana</option>
-  			<option value="NE" selected>Nebraska</option>
-  			<option value="NV">Nevada</option>
-  			<option value="NH">New Hampshire</option>
-  			<option value="NJ">New Jersey</option>
-  			<option value="NM">New Mexico</option>
-  			<option value="NY">New York</option>
-  			<option value="NC">North Carolina</option>
-  			<option value="ND">North Dakota</option>
-  			<option value="OH">Ohio</option>
-  			<option value="OK">Oklahoma</option>
-  			<option value="OR">Oregon</option>
-  			<option value="PA">Pennsylvania</option>
-  			<option value="RI">Rhode Island</option>
-  			<option value="SC">South Carolina</option>
-  			<option value="SD">South Dakota</option>
-  			<option value="TN">Tennessee</option>
-  			<option value="TX">Texas</option>
-  			<option value="UT">Utah</option>
-  			<option value="VT">Vermont</option>
-  			<option value="VA">Virginia</option>
-  			<option value="WA">Washington</option>
-  			<option value="WV">West Virginia</option>
-  			<option value="WI">Wisconsin</option>
-  			<option value="WY">Wyoming</option>
-  		</select>
-  	</div>
-  	<div class="form-group">
-  		<label for="zip_id" class="control-label">Zip Code</label>
-  		<input type="text" class="form-control" id="zip_id" name="zip" placeholder="#####">
-  	</div>
-
-    <div class="form-group">
-  		  <label for="phone" class="control-label">Phone Number</label>
-        <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
-    </div>
-
-    <div class="form-group">
-      <label for="email">Email address</label>
-      <input type="email" class="form-control" id="email">
-    </div>
-    <div class="form-group">
-      <label for="birthdate" class="control-label">Date of Birth</label>
-      <input type="date" class="form-control" id="birthdate" name="birthdate">
-    </div>
-    <div class="form-group">
-      <label for="age" class="control-label">Age</label>
-      <input type="number" name="age" class="form-control">
-    </div>
-
-    <div class="form-group">
-  		<label for="origin_country" class="control-label">Country of origin</label>
-  		<input type="text" class="form-control" id="origin_country" name="origin_country" placeholder="USA">
-  	</div>
-
-    <div class="form-group">
-      <label for="years_in_usa" class="control-label">Years in USA</label>
-      <input type="number" name="years_in_usa" class="form-control">
-    </div>
-
-    <div class="form-group">
-      <button type="submit" class="btn btn-primary" onclick="formNext('form_section_00');">Back</button>
-      <button type="submit" class="btn btn-primary" onclick="formNext('form_section_02');">Next</button>
-    </div>
-  </form>
-
-  <form id="form_section_02" class="d-none">
-  <h5>Work Information</h5>
-  <hr>
-    <div class="form-group">
-  		<label for="work_outside_home" class="control-label">Work outside the home?</label>
-      <br>
-      <label><input type="radio" name="work_outside_home" value="yes"> Yes</label><br>
-      <label><input type="radio" name="work_outside_home" value="no"> No</label><br>
-  	</div>
-
-    <div class="form-group">
-  		<label for="full_or_part_time" class="control-label">Full-time or Part-time?</label>
-      <br>
-      <label><input type="radio" name="full_or_part_time" value="fulltime"> Full-time</label><br>
-      <label><input type="radio" name="full_or_part_time" value="parttime"> Part-time</label><br>
-  	</div>
-
-    <div class="form-group">
-  		<label for="full_or_part_time" class="control-label">Type of Employment?</label>
-      <br>
-      <label><input type="radio" name="employment_type" value="cleaning"> Cleaning</label><br>
-      <label><input type="radio" name="employment_type" value="factory"> Factory</label><br>
-      <label><input type="radio" name="employment_type" value="restaurant"> Restaurant</label><br>
-      <label><input type="radio" name="employment_type" value="childcare"> Child-care</label><br>
-      <label><input type="radio" name="employment_type" value="other"> Other</label><br>
+    <h6 class="text-center">Your responses are confidential and FIA does not share your information with other people and organizations. We share information with our funders about our group of participants as a whole and never with individual names.</h6>
+    <hr>
+    <form id="form_section_00">
       <div class="form-group">
-        <label for="other_employment" class="control-label">Please state other employment:</label>
-        <input type="text" class="form-control" id="other_employment" name="other_employment">
+        <label for="date_started" class="control-label">Date Started FIA</label>
+        <input type="date" class="form-control" id="date_started" name="date_started">
       </div>
-  	</div>
+      <div class="form-group">
+        <label for="years_in_fia" class="control-label">Years in FIA</label>
+        <input type="number" name="years_in_fia" class="form-control">
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary" onclick="formNext('form_section_01');">Begin <span class="glyphicon glyphicon-repeat"></span></button>
+      </div>
+    </form>
+
+    <form id="form_section_01" class="d-none">
+    <h5>Personal Information</h5>
+    <hr>
     <div class="form-group">
-      <label for="years_employed" class="control-label">Years employed</label>
-      <input type="number" name="years_employed" class="form-control">
-    </div>
-  	<div class="form-group">
-      <button type="submit" class="btn btn-primary" onclick="formNext('form_section_01');">Back</button>
-  		<button type="submit" class="btn btn-primary" onclick="formNext('form_section_03');">Next</button>
-  	</div>
-  </form>
+    		<label for="full_name_id" class="control-label">Full Name</label>
+    		<input type="text" class="form-control" id="full_name_id" name="full_name">
+    	</div>
+
+    	<div class="form-group">
+    		<label for="street1_id" class="control-label">Street Address 1</label>
+    		<input type="text" class="form-control" id="street1_id" name="street1" placeholder="Street address, P.O. box, company name, c/o">
+    	</div>
+
+    	<div class="form-group">
+    		<label for="street2_id" class="control-label">Street Address 2</label>
+    		<input type="text" class="form-control" id="street2_id" name="street2" placeholder="Apartment, suite, unit, building, floor, etc.">
+    	</div>
+
+    	<div class="form-group">
+    		<label for="city_id" class="control-label">City</label>
+    		<input type="text" class="form-control" id="city_id" name="city" placeholder="City">
+    	</div>
+
+    	<div class="form-group"> <!-- State Button -->
+    		<label for="state_id" class="control-label">State</label>
+    		<select class="form-control" id="state_id">
+    			<option value="AL">Alabama</option>
+    			<option value="AK">Alaska</option>
+    			<option value="AZ">Arizona</option>
+    			<option value="AR">Arkansas</option>
+    			<option value="CA">California</option>
+    			<option value="CO">Colorado</option>
+    			<option value="CT">Connecticut</option>
+    			<option value="DE">Delaware</option>
+    			<option value="DC">District Of Columbia</option>
+    			<option value="FL">Florida</option>
+    			<option value="GA">Georgia</option>
+    			<option value="HI">Hawaii</option>
+    			<option value="ID">Idaho</option>
+    			<option value="IL">Illinois</option>
+    			<option value="IN">Indiana</option>
+    			<option value="IA">Iowa</option>
+    			<option value="KS">Kansas</option>
+    			<option value="KY">Kentucky</option>
+    			<option value="LA">Louisiana</option>
+    			<option value="ME">Maine</option>
+    			<option value="MD">Maryland</option>
+    			<option value="MA">Massachusetts</option>
+    			<option value="MI">Michigan</option>
+    			<option value="MN">Minnesota</option>
+    			<option value="MS">Mississippi</option>
+    			<option value="MO">Missouri</option>
+    			<option value="MT">Montana</option>
+    			<option value="NE" selected>Nebraska</option>
+    			<option value="NV">Nevada</option>
+    			<option value="NH">New Hampshire</option>
+    			<option value="NJ">New Jersey</option>
+    			<option value="NM">New Mexico</option>
+    			<option value="NY">New York</option>
+    			<option value="NC">North Carolina</option>
+    			<option value="ND">North Dakota</option>
+    			<option value="OH">Ohio</option>
+    			<option value="OK">Oklahoma</option>
+    			<option value="OR">Oregon</option>
+    			<option value="PA">Pennsylvania</option>
+    			<option value="RI">Rhode Island</option>
+    			<option value="SC">South Carolina</option>
+    			<option value="SD">South Dakota</option>
+    			<option value="TN">Tennessee</option>
+    			<option value="TX">Texas</option>
+    			<option value="UT">Utah</option>
+    			<option value="VT">Vermont</option>
+    			<option value="VA">Virginia</option>
+    			<option value="WA">Washington</option>
+    			<option value="WV">West Virginia</option>
+    			<option value="WI">Wisconsin</option>
+    			<option value="WY">Wyoming</option>
+    		</select>
+    	</div>
+    	<div class="form-group">
+    		<label for="zip_id" class="control-label">Zip Code</label>
+    		<input type="text" class="form-control" id="zip_id" name="zip" placeholder="#####">
+    	</div>
+
+      <div class="form-group">
+    		  <label for="phone" class="control-label">Phone Number</label>
+          <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      <div class="form-group">
+        <label for="birthdate" class="control-label">Date of Birth</label>
+        <input type="date" class="form-control" id="birthdate" name="birthdate">
+      </div>
+      <div class="form-group">
+        <label for="age" class="control-label">Age</label>
+        <input type="number" name="age" class="form-control">
+      </div>
+
+      <div class="form-group">
+    		<label for="origin_country" class="control-label">Country of origin</label>
+    		<input type="text" class="form-control" id="origin_country" name="origin_country" placeholder="USA">
+    	</div>
+
+      <div class="form-group">
+        <label for="years_in_usa" class="control-label">Years in USA</label>
+        <input type="number" name="years_in_usa" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary" onclick="formNext('form_section_00');">Back</button>
+        <button type="submit" class="btn btn-primary" onclick="formNext('form_section_02');">Next</button>
+      </div>
+    </form>
+
+    <form id="form_section_02" class="d-none">
+    <h5>Work Information</h5>
+    <hr>
+      <div class="form-group">
+    		<label for="work_outside_home" class="control-label">Work outside the home?</label>
+        <br>
+        <label><input type="radio" name="work_outside_home" value="yes"> Yes</label><br>
+        <label><input type="radio" name="work_outside_home" value="no"> No</label><br>
+    	</div>
+
+      <div class="form-group">
+    		<label for="full_or_part_time" class="control-label">Full-time or Part-time?</label>
+        <br>
+        <label><input type="radio" name="full_or_part_time" value="fulltime"> Full-time</label><br>
+        <label><input type="radio" name="full_or_part_time" value="parttime"> Part-time</label><br>
+    	</div>
+
+      <div class="form-group">
+    		<label for="full_or_part_time" class="control-label">Type of Employment?</label>
+        <br>
+        <label><input type="radio" name="employment_type" value="cleaning"> Cleaning</label><br>
+        <label><input type="radio" name="employment_type" value="factory"> Factory</label><br>
+        <label><input type="radio" name="employment_type" value="restaurant"> Restaurant</label><br>
+        <label><input type="radio" name="employment_type" value="childcare"> Child-care</label><br>
+        <label><input type="radio" name="employment_type" value="other"> Other</label><br>
+        <div class="form-group">
+          <label for="other_employment" class="control-label">Please state other employment:</label>
+          <input type="text" class="form-control" id="other_employment" name="other_employment">
+        </div>
+    	</div>
+      <div class="form-group">
+        <label for="years_employed" class="control-label">Years employed</label>
+        <input type="number" name="years_employed" class="form-control">
+      </div>
+    	<div class="form-group">
+        <button type="submit" class="btn btn-primary" onclick="formNext('form_section_01');">Back</button>
+    		<button type="submit" class="btn btn-primary" onclick="formNext('form_section_03');">Next</button>
+    	</div>
+    </form>
 
 
-    <form id="form_section_03" class="d-none">
-      <h5>Education</h5>
+      <form id="form_section_03" class="d-none">
+        <h5>Education</h5>
+        <hr>
+          <div class="form-group">
+        		<label for="class_or_training" class="control-label">At this time, are you participating in any kind of class or training?</label>
+            <br>
+            <label><input type="radio" name="class_or_training" value="yes"> Yes</label><br>
+            <label><input type="radio" name="class_or_training" value="no"> No</label><br>
+        	</div>
+
+          <div class="form-group">
+        		<label for="current_class_training" class="control-label">Please indicate what kind of class training you are taking</label>
+            <div class="checkbox">
+              <label><input type="checkbox" name="current_class_training" value="computers"> Computer(s)</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="current_class_training" value="language"> English or other language(s)</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="current_class_training" value="health"> Health promoter training</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="current_class_training" value="sewing"> Sewing or other handwork</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="current_class_training" value="women_values"> Women and values</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="current_class_training" value="other"> Other</label>
+            </div>
+            <div class="form-group">
+              <label for="current_class_training_other" class="control-label">Please state other class(es)</label>
+              <input type="text" class="form-control" id="current_class_training_other" name="current_class_training_other">
+            </div>
+        </div>
+
+          <div class="form-group">
+        		<label for="education" class="control-label">Highest level of education?</label>
+            <br>
+            <label><input type="radio" name="education" value="elementary"> Elementary</label><br>
+            <label><input type="radio" name="education" value="highschool"> High School</label><br>
+            <label><input type="radio" name="education" value="college"> College</label><br>
+        	</div>
+
+          <div class="form-group">
+        		<label for="attend_church" class="control-label">Do you attend a church?</label>
+            <br>
+            <label><input type="radio" name="attend_church" value="yes"> Yes</label><br>
+            <label><input type="radio" name="attend_church" value="no"> No</label><br>
+        	</div>
+
+          <div class="form-group">
+        		<label for="church" class="control-label">If yes, which one?</label>
+        		<input type="text" class="form-control" id="church" name="church">
+        	</div>
+
+        	<div class="form-group">
+            <button type="submit" class="btn btn-primary" onclick="formNext('form_section_02');">Back</button>
+        		<button type="submit" class="btn btn-primary" onclick="formNext('form_section_04');">Next</button>
+        	</div>
+        </form>
+
+    <form id="form_section_04" class="d-none">
+      <h5>Household Information</h5>
       <hr>
         <div class="form-group">
-      		<label for="class_or_training" class="control-label">At this time, are you participating in any kind of class or training?</label>
+      		<label for="housing" class="control-label">Home-owner or renter?</label>
           <br>
-          <label><input type="radio" name="class_or_training" value="yes"> Yes</label><br>
-          <label><input type="radio" name="class_or_training" value="no"> No</label><br>
+          <label><input type="radio" name="housing" value="homeowner"> Home-owner</label><br>
+          <label><input type="radio" name="housing" value="renter"> Renter</label><br>
       	</div>
 
         <div class="form-group">
-      		<label for="current_class_training" class="control-label">Please indicate what kind of class training you are taking</label>
-          <div class="checkbox">
-            <label><input type="checkbox" name="current_class_training" value="computers"> Computer(s)</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" name="current_class_training" value="language"> English or other language(s)</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" name="current_class_training" value="health"> Health promoter training</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" name="current_class_training" value="sewing"> Sewing or other handwork</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" name="current_class_training" value="women_values"> Women and values</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" name="current_class_training" value="other"> Other</label>
-          </div>
-          <div class="form-group">
-            <label for="current_class_training_other" class="control-label">Please state other class(es)</label>
-            <input type="text" class="form-control" id="current_class_training_other" name="current_class_training_other">
-          </div>
-      </div>
-
-        <div class="form-group">
-      		<label for="education" class="control-label">Highest level of education?</label>
+      		<label for="hh_income" class="control-label">Annual Household Income?</label>
           <br>
-          <label><input type="radio" name="education" value="elementary"> Elementary</label><br>
-          <label><input type="radio" name="education" value="highschool"> High School</label><br>
-          <label><input type="radio" name="education" value="college"> College</label><br>
+          <label><input type="radio" name="hh_income" value="0_10k" checked> $0 - $10,000</label><br>
+          <label><input type="radio" name="hh_income" value="11k_20k"> $11,000 - $20,000</label><br>
+          <label><input type="radio" name="hh_income" value="21k_30k"> $21,000 - $30,000</label><br>
+          <label><input type="radio" name="hh_income" value="31k_40k"> $31,000 - $40,000</label><br>
+          <label><input type="radio" name="hh_income" value="41k_50k"> $41,000 - $50,000</label><br>
+          <label><input type="radio" name="hh_income" value="51k_60k"> $51,000 - $60,000</label><br>
+          <label><input type="radio" name="hh_income" value="61k_70k"> $61,000 -$70,000</label><br>
+          <label><input type="radio" name="hh_income" value="71k_80k"> $71,000 - $80,000</label><br>
+          <label><input type="radio" name="hh_income" value="81k_90k"> $81,000 - $90,000</label><br>
+          <label><input type="radio" name="hh_income" value="91k_plus"> $91,000+</label><br>
       	</div>
-
         <div class="form-group">
-      		<label for="attend_church" class="control-label">Do you attend a church?</label>
-          <br>
-          <label><input type="radio" name="attend_church" value="yes"> Yes</label><br>
-          <label><input type="radio" name="attend_church" value="no"> No</label><br>
-      	</div>
-
+          <label for="hh_adults" class="control-label">How many adults live in your home?</label>
+          <input type="number" name="hh_adults" class="form-control">
+        </div>
         <div class="form-group">
-      		<label for="church" class="control-label">If yes, which one?</label>
-      		<input type="text" class="form-control" id="church" name="church">
-      	</div>
-
+          <label for="hh_children" class="control-label">How many children live in your home?</label>
+          <input type="number" name="hh_children" class="form-control">
+        </div>
       	<div class="form-group">
-          <button type="submit" class="btn btn-primary" onclick="formNext('form_section_02');">Back</button>
-      		<button type="submit" class="btn btn-primary" onclick="formNext('form_section_04');">Next</button>
+          <button type="submit" class="btn btn-primary" onclick="formNext('form_section_03');">Back</button>
+      		<button type="submit" class="btn btn-primary" onclick="formNext('form_section_05');">Next</button>
       	</div>
       </form>
 
-  <form id="form_section_04" class="d-none">
-    <h5>Household Information</h5>
-    <hr>
-      <div class="form-group">
-    		<label for="housing" class="control-label">Home-owner or renter?</label>
-        <br>
-        <label><input type="radio" name="housing" value="homeowner"> Home-owner</label><br>
-        <label><input type="radio" name="housing" value="renter"> Renter</label><br>
-    	</div>
+      <form id="form_section_05" class="d-none">
+        <h5>Family Information</h5>
+        <hr>
+
+        <div class="form-group">
+          <label for="have_children" class="control-label">Do you have children?</label>
+          <br>
+          <label><input type="radio" name="has_children" value="yes"> Yes</label><br>
+          <label><input type="radio" name="has_children" value="no"> No</label><br>
+        </div>
+
+        <div class="form-group">
+          <label for="children" class="control-label">If yes, how many?</label>
+          <input type="number" name="children" class="form-control">
+        </div>
 
       <div class="form-group">
-    		<label for="hh_income" class="control-label">Annual Household Income?</label>
-        <br>
-        <label><input type="radio" name="hh_income" value="0_10k" checked> $0 - $10,000</label><br>
-        <label><input type="radio" name="hh_income" value="11k_20k"> $11,000 - $20,000</label><br>
-        <label><input type="radio" name="hh_income" value="21k_30k"> $21,000 - $30,000</label><br>
-        <label><input type="radio" name="hh_income" value="31k_40k"> $31,000 - $40,000</label><br>
-        <label><input type="radio" name="hh_income" value="41k_50k"> $41,000 - $50,000</label><br>
-        <label><input type="radio" name="hh_income" value="51k_60k"> $51,000 - $60,000</label><br>
-        <label><input type="radio" name="hh_income" value="61k_70k"> $61,000 -$70,000</label><br>
-        <label><input type="radio" name="hh_income" value="71k_80k"> $71,000 - $80,000</label><br>
-        <label><input type="radio" name="hh_income" value="81k_90k"> $81,000 - $90,000</label><br>
-        <label><input type="radio" name="hh_income" value="91k_plus"> $91,000+</label><br>
-    	</div>
-      <div class="form-group">
-        <label for="hh_adults" class="control-label">How many adults live in your home?</label>
-        <input type="number" name="hh_adults" class="form-control">
-      </div>
-      <div class="form-group">
-        <label for="hh_children" class="control-label">How many children live in your home?</label>
-        <input type="number" name="hh_children" class="form-control">
-      </div>
-    	<div class="form-group">
-        <button type="submit" class="btn btn-primary" onclick="formNext('form_section_03');">Back</button>
-    		<button type="submit" class="btn btn-primary" onclick="formNext('form_section_05');">Next</button>
-    	</div>
-    </form>
-
-    <form id="form_section_05" class="d-none">
-      <h5>Family Information</h5>
-      <hr>
-
-      <div class="form-group">
-        <label for="have_children" class="control-label">Do you have children?</label>
-        <br>
-        <label><input type="radio" name="has_children" value="yes"> Yes</label><br>
-        <label><input type="radio" name="has_children" value="no"> No</label><br>
-      </div>
-
-      <div class="form-group">
-        <label for="children" class="control-label">If yes, how many?</label>
-        <input type="number" name="children" class="form-control">
-      </div>
-
-    <div class="form-group">
-      <label class="control-label">For each child, please provide:</label>
-      <table class="table table-bordered">
-        <tbody>
-          <tr>
-              <th>Name</th>
-              <th>Age</th>
-              <th>Gender</th>
-              <th>Attend School?</th>
-              <th>Name of School</th>
-              <th>Grade</th>
-              <th>Passing this year?</th>
-              <th>Participate in FIA?</th>
-              <th>Health Concerns?</th>
-          </tr>
-          <tr>
-              <td><input type="text" class="form-control" id="child_01_name" name="child_01_name"></td>
-              <td><input type="number" name="child_01_age" class="form-control"></span></td>
-              <td>
-                <select name="child_01_gender">
-                  <option value="" selected disabled></option>
-                  <option value="m">M</option>
-                  <option value="f">F</option>
-                </select>
-              </td>
-              <td>
-              <select name="child_01_in_school">
-                  <option value="" selected disabled></option>
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
-                </select>
-              </td>
-              <td><input type="text" class="form-control" id="child_01_school" name="child_01_school"></td>
-              <td><input type="number" name="child_01_grade" class="form-control"></span></td>
-              <td>
-                <select name="child_01_passing">
-                  <option value="" selected disabled></option>
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
-                </select>
-              </td>
-              <td>
-                <select name="child_01_participate_fia">
-                  <option value="" selected disabled></option>
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
-                </select>
-              </td>
-              <td>
-                <select name="child_01_health_concerns">
-                  <option value="" selected disabled></option>
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
-                </select>
-              </td>
-          </tr>
-          <tr>
-              <td><input type="text" class="form-control" id="child_02_name" name="child_02_name"></td>
-              <td><input type="number" name="child_02_age" class="form-control"></span></td>
-              <td>
-                <select name="child_02_gender">
-                  <option value="" selected disabled></option>
-                  <option value="m">M</option>
-                  <option value="f">F</option>
-                </select>
-              </td>
-              <td>
-              <select name="child_02_in_school">
-                  <option value="" selected disabled></option>
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
-                </select>
-              </td>
-              <td><input type="text" class="form-control" id="child_02_school" name="child_02_school"></td>
-              <td><input type="number" name="child_02_grade" class="form-control"></span></td>
-              <td>
-                <select name="child_02_passing">
-                  <option value="" selected disabled></option>
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
-                </select>
-              </td>
-              <td>
-                <select name="child_02_participate_fia">
-                  <option value="" selected disabled></option>
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
-                </select>
-              </td>
-              <td>
-                <select name="child_02_health_concerns">
-                  <option value="" selected disabled></option>
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
-                </select>
-              </td>
-          </tr>
-          <tr>
-              <td><input type="text" class="form-control" id="child_03_name" name="child_03_name"></td>
-              <td><input type="number" name="child_03_age" class="form-control"></span></td>
-              <td>
-                <select name="child_03_gender">
-                  <option value="" selected disabled></option>
-                  <option value="m">M</option>
-                  <option value="f">F</option>
-                </select>
-              </td>
-              <td>
-              <select name="child_03_in_school">
-                  <option value="" selected disabled></option>
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
-                </select>
-              </td>
-              <td><input type="text" class="form-control" id="child_03_school" name="child_03_school"></td>
-              <td><input type="number" name="child_03_grade" class="form-control"></span></td>
-              <td>
-                <select name="child_03_passing">
-                  <option value="" selected disabled></option>
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
-                </select>
-              </td>
-              <td>
-                <select name="child_03_participate_fia">
-                  <option value="" selected disabled></option>
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
-                </select>
-              </td>
-              <td>
-                <select name="child_03_health_concerns">
-                  <option value="" selected disabled></option>
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
-                </select>
-              </td>
-          </tr>
-          <tr>
-              <td><input type="text" class="form-control" id="child_04_name" name="child_04_name"></td>
-              <td><input type="number" name="child_04_age" class="form-control"></span></td>
-              <td>
-                <select name="child_04_gender">
-                  <option value="" selected disabled></option>
-                  <option value="m">M</option>
-                  <option value="f">F</option>
-                </select>
-              </td>
-              <td>
-              <select name="child_04_in_school">
-                  <option value="" selected disabled></option>
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
-                </select>
-              </td>
-              <td><input type="text" class="form-control" id="child_04_school" name="child_04_school"></td>
-              <td><input type="number" name="child_04_grade" class="form-control"></span></td>
-              <td>
-                <select name="child_04_passing">
-                  <option value="" selected disabled></option>
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
-                </select>
-              </td>
-              <td>
-                <select name="child_04_participate_fia">
-                  <option value="" selected disabled></option>
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
-                </select>
-              </td>
-              <td>
-                <select name="child_04_health_concerns">
-                  <option value="" selected disabled></option>
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
-                </select>
-              </td>
-          </tr>
-          <tr>
-              <td><input type="text" class="form-control" id="child_05_name" name="child_05_name"></td>
-              <td><input type="number" name="child_05_age" class="form-control"></span></td>
-              <td>
-                <select name="child_05_gender">
-                  <option value="" selected disabled></option>
-                  <option value="m">M</option>
-                  <option value="f">F</option>
-                </select>
-              </td>
-              <td>
-              <select name="child_05_in_school">
-                  <option value="" selected disabled></option>
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
-                </select>
-              </td>
-              <td><input type="text" class="form-control" id="child_05_school" name="child_05_school"></td>
-              <td><input type="number" name="child_05_grade" class="form-control"></span></td>
-              <td>
-                <select name="child_05_passing">
-                  <option value="" selected disabled></option>
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
-                </select>
-              </td>
-              <td>
-                <select name="child_05_participate_fia">
-                  <option value="" selected disabled></option>
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
-                </select>
-              </td>
-              <td>
-                <select name="child_05_health_concerns">
-                  <option value="" selected disabled></option>
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
-                </select>
-              </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary" onclick="formNext('form_section_04');">Back</button>
-        <button type="submit" class="btn btn-primary" onclick="formNext('form_section_06');">Next</button>
+        <label class="control-label">For each child, please provide:</label>
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Attend School?</th>
+                <th>Name of School</th>
+                <th>Grade</th>
+                <th>Passing this year?</th>
+                <th>Participate in FIA?</th>
+                <th>Health Concerns?</th>
+            </tr>
+            <tr>
+                <td><input type="text" class="form-control" id="child_01_name" name="child_01_name"></td>
+                <td><input type="number" name="child_01_age" class="form-control"></span></td>
+                <td>
+                  <select name="child_01_gender">
+                    <option value="" selected disabled></option>
+                    <option value="m">M</option>
+                    <option value="f">F</option>
+                  </select>
+                </td>
+                <td>
+                <select name="child_01_in_school">
+                    <option value="" selected disabled></option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                </td>
+                <td><input type="text" class="form-control" id="child_01_school" name="child_01_school"></td>
+                <td><input type="number" name="child_01_grade" class="form-control"></span></td>
+                <td>
+                  <select name="child_01_passing">
+                    <option value="" selected disabled></option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="child_01_participate_fia">
+                    <option value="" selected disabled></option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="child_01_health_concerns">
+                    <option value="" selected disabled></option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" class="form-control" id="child_02_name" name="child_02_name"></td>
+                <td><input type="number" name="child_02_age" class="form-control"></span></td>
+                <td>
+                  <select name="child_02_gender">
+                    <option value="" selected disabled></option>
+                    <option value="m">M</option>
+                    <option value="f">F</option>
+                  </select>
+                </td>
+                <td>
+                <select name="child_02_in_school">
+                    <option value="" selected disabled></option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                </td>
+                <td><input type="text" class="form-control" id="child_02_school" name="child_02_school"></td>
+                <td><input type="number" name="child_02_grade" class="form-control"></span></td>
+                <td>
+                  <select name="child_02_passing">
+                    <option value="" selected disabled></option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="child_02_participate_fia">
+                    <option value="" selected disabled></option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="child_02_health_concerns">
+                    <option value="" selected disabled></option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" class="form-control" id="child_03_name" name="child_03_name"></td>
+                <td><input type="number" name="child_03_age" class="form-control"></span></td>
+                <td>
+                  <select name="child_03_gender">
+                    <option value="" selected disabled></option>
+                    <option value="m">M</option>
+                    <option value="f">F</option>
+                  </select>
+                </td>
+                <td>
+                <select name="child_03_in_school">
+                    <option value="" selected disabled></option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                </td>
+                <td><input type="text" class="form-control" id="child_03_school" name="child_03_school"></td>
+                <td><input type="number" name="child_03_grade" class="form-control"></span></td>
+                <td>
+                  <select name="child_03_passing">
+                    <option value="" selected disabled></option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="child_03_participate_fia">
+                    <option value="" selected disabled></option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="child_03_health_concerns">
+                    <option value="" selected disabled></option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" class="form-control" id="child_04_name" name="child_04_name"></td>
+                <td><input type="number" name="child_04_age" class="form-control"></span></td>
+                <td>
+                  <select name="child_04_gender">
+                    <option value="" selected disabled></option>
+                    <option value="m">M</option>
+                    <option value="f">F</option>
+                  </select>
+                </td>
+                <td>
+                <select name="child_04_in_school">
+                    <option value="" selected disabled></option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                </td>
+                <td><input type="text" class="form-control" id="child_04_school" name="child_04_school"></td>
+                <td><input type="number" name="child_04_grade" class="form-control"></span></td>
+                <td>
+                  <select name="child_04_passing">
+                    <option value="" selected disabled></option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="child_04_participate_fia">
+                    <option value="" selected disabled></option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="child_04_health_concerns">
+                    <option value="" selected disabled></option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" class="form-control" id="child_05_name" name="child_05_name"></td>
+                <td><input type="number" name="child_05_age" class="form-control"></span></td>
+                <td>
+                  <select name="child_05_gender">
+                    <option value="" selected disabled></option>
+                    <option value="m">M</option>
+                    <option value="f">F</option>
+                  </select>
+                </td>
+                <td>
+                <select name="child_05_in_school">
+                    <option value="" selected disabled></option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                </td>
+                <td><input type="text" class="form-control" id="child_05_school" name="child_05_school"></td>
+                <td><input type="number" name="child_05_grade" class="form-control"></span></td>
+                <td>
+                  <select name="child_05_passing">
+                    <option value="" selected disabled></option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="child_05_participate_fia">
+                    <option value="" selected disabled></option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="child_05_health_concerns">
+                    <option value="" selected disabled></option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
-    </form>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary" onclick="formNext('form_section_04');">Back</button>
+          <button type="submit" class="btn btn-primary" onclick="formNext('form_section_06');">Next</button>
+        </div>
 
-    <form id="form_section_06" class="d-none">
-      <h5>Participation</h5>
-      <hr>
+      </form>
+
+      <form id="form_section_06" class="d-none">
+        <h5>Participation</h5>
+        <hr>
+
+        <div class="form-group">
+      		<label for="reasons_for_joining" class="control-label">What are your reasons for joining or participating in Families in Action? Check all that apply.</label>
+          <div class="checkbox">
+            <label><input type="checkbox" name="reasons_for_joining" value="improve_health"> Improve or maintain my health</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" name="reasons_for_joining" value="lose_weight"> Lose weight</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" name="reasons_for_joining" value="reduce_stress"> Reduce my stress</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" name="reasons_for_joining" value="nutrition"> Learn more about good nutrition</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" name="reasons_for_joining" value="active"> To be active and have more energy</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" name="reasons_for_joining" value="social"> To be with other women; to have social support</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" name="reasons_for_joining" value="role_model"> Role model health for my family</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" name="reasons_for_joining" value="other"> Other reasons</label>
+          </div>
+          <div class="form-group">
+            <label for="reasons_for_joing_other" class="control-label">Please state other reason(s)</label>
+            <input type="text" class="form-control" id="reasons_for_joing_other" name="reasons_for_joing_other">
+          </div>
+      </div>
 
       <div class="form-group">
-    		<label for="reasons_for_joining" class="control-label">What are your reasons for joining or participating in Families in Action? Check all that apply.</label>
+        <label for="child_participation" class="control-label">If you have children participating in Families in Action child programming, why do you wish for them to participate?</label>
         <div class="checkbox">
-          <label><input type="checkbox" name="reasons_for_joining" value="improve_health"> Improve or maintain my health</label>
+          <label><input type="checkbox" name="child_participation" value="play_with_other_children"> I want my child to enjoy time playing with other children</label>
         </div>
         <div class="checkbox">
-          <label><input type="checkbox" name="reasons_for_joining" value="lose_weight"> Lose weight</label>
+          <label><input type="checkbox" name="child_participation" value="nutrition"> I want my children to learn about nutrition</label>
         </div>
         <div class="checkbox">
-          <label><input type="checkbox" name="reasons_for_joining" value="reduce_stress"> Reduce my stress</label>
+          <label><input type="checkbox" name="child_participation" value="active"> I want my children to be active</label>
         </div>
         <div class="checkbox">
-          <label><input type="checkbox" name="reasons_for_joining" value="nutrition"> Learn more about good nutrition</label>
+          <label><input type="checkbox" name="child_participation" value="see_mom_take_care"> I want my children to see me taking care of myself by exercising and being social with other women</label>
         </div>
         <div class="checkbox">
-          <label><input type="checkbox" name="reasons_for_joining" value="active"> To be active and have more energy</label>
+          <label><input type="checkbox" name="child_participation" value="homework"> I want my children to have help with homework</label>
         </div>
         <div class="checkbox">
-          <label><input type="checkbox" name="reasons_for_joining" value="social"> To be with other women; to have social support</label>
+          <label><input type="checkbox" name="child_participation" value="positive_interactions"> I want my children to have positive interactions with other program participatnts, volunteers and FIA staff</label>
         </div>
         <div class="checkbox">
-          <label><input type="checkbox" name="reasons_for_joining" value="role_model"> Role model health for my family</label>
+          <label><input type="checkbox" name="child_participation" value="need_to_attend"> I need my children to attend FIA so that I can participate, I don't have anywhere else to leave them</label>
         </div>
         <div class="checkbox">
-          <label><input type="checkbox" name="reasons_for_joining" value="other"> Other reasons</label>
+          <label><input type="checkbox" name="child_participation" value="likes_fia"> My children like to come to FIA programs</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" name="child_participation" value="other"> Other reasons</label>
         </div>
         <div class="form-group">
-          <label for="reasons_for_joing_other" class="control-label">Please state other reason(s)</label>
-          <input type="text" class="form-control" id="reasons_for_joing_other" name="reasons_for_joing_other">
+          <label for="child_participation_other" class="control-label">Please state other reason(s)</label>
+          <input type="text" class="form-control" id="child_participation_other" name="child_participation_other">
         </div>
-    </div>
+      </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary" onclick="formNext('form_section_05');">Back</button>
+          <button type="submit" class="btn btn-primary" onclick="formNext('form_section_07');">Next</button>
+        </div>
+      </form>
 
-    <div class="form-group">
-      <label for="child_participation" class="control-label">If you have children participating in Families in Action child programming, why do you wish for them to participate?</label>
-      <div class="checkbox">
-        <label><input type="checkbox" name="child_participation" value="play_with_other_children"> I want my child to enjoy time playing with other children</label>
-      </div>
-      <div class="checkbox">
-        <label><input type="checkbox" name="child_participation" value="nutrition"> I want my children to learn about nutrition</label>
-      </div>
-      <div class="checkbox">
-        <label><input type="checkbox" name="child_participation" value="active"> I want my children to be active</label>
-      </div>
-      <div class="checkbox">
-        <label><input type="checkbox" name="child_participation" value="see_mom_take_care"> I want my children to see me taking care of myself by exercising and being social with other women</label>
-      </div>
-      <div class="checkbox">
-        <label><input type="checkbox" name="child_participation" value="homework"> I want my children to have help with homework</label>
-      </div>
-      <div class="checkbox">
-        <label><input type="checkbox" name="child_participation" value="positive_interactions"> I want my children to have positive interactions with other program participatnts, volunteers and FIA staff</label>
-      </div>
-      <div class="checkbox">
-        <label><input type="checkbox" name="child_participation" value="need_to_attend"> I need my children to attend FIA so that I can participate, I don't have anywhere else to leave them</label>
-      </div>
-      <div class="checkbox">
-        <label><input type="checkbox" name="child_participation" value="likes_fia"> My children like to come to FIA programs</label>
-      </div>
-      <div class="checkbox">
-        <label><input type="checkbox" name="child_participation" value="other"> Other reasons</label>
-      </div>
-      <div class="form-group">
-        <label for="child_participation_other" class="control-label">Please state other reason(s)</label>
-        <input type="text" class="form-control" id="child_participation_other" name="child_participation_other">
-      </div>
-    </div>
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary" onclick="formNext('form_section_05');">Back</button>
-        <button type="submit" class="btn btn-primary" onclick="formNext('form_section_07');">Next</button>
-      </div>
-    </form>
+      <form id="form_section_07" class="d-none">
+        <h5>Miscellaneous</h5>
+        <hr>
+        <div class="form-group">
+        		<label for="hear_about_fia" class="control-label">How did you hear about Families in Action?</label>
+        		<input type="text" class="form-control" id="hear_about_fia" name="hear_about_fia">
+      	</div>
+        <div class="form-group">
+          <label for="first_time_registration" class="control-label">Is this your first time registering for FIA?</label>
+          <br>
+          <label><input type="radio" name="first_time_registration" value="yes"> Yes</label><br>
+          <label><input type="radio" name="first_time_registration" value="no"> No</label><br>
+        </div>
+        <div class="form-group">
+        		<label for="important_1" class="control-label">What would you say are the three most important ways that FIA programs have impacted your life?</label>
+        		<input type="text" class="form-control" id="important_1" name="important_1"><br>
+            <input type="text" class="form-control" id="important_2" name="important_2"><br>
+            <input type="text" class="form-control" id="important_3" name="important_3"><br>
+      	</div>
+        <div class="form-group">
+            <label for="important_1" class="control-label">If you are a mom with children participating in FIA programs, what would you say are the three most important ways that FIA programs have impacted the life/lives of your child(ren)?</label>
+            <input type="text" class="form-control" id="child_important_1" name="child_important_1"><br>
+            <input type="text" class="form-control" id="child_important_2" name="child_important_2"><br>
+            <input type="text" class="form-control" id="child_important_3" name="child_important_3"><br>
+        </div>
+        <div class="form-group">
+            <label for="comments" class="control-label">Comments & Suggestions</label>
+            <input type="text" class="form-control" id="comments" name="comments"><br>
+        </div>
 
-    <form id="form_section_07" class="d-none">
-      <h5>Miscellaneous</h5>
-      <hr>
-      <div class="form-group">
-      		<label for="hear_about_fia" class="control-label">How did you hear about Families in Action?</label>
-      		<input type="text" class="form-control" id="hear_about_fia" name="hear_about_fia">
-    	</div>
-      <div class="form-group">
-        <label for="first_time_registration" class="control-label">Is this your first time registering for FIA?</label>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary" onclick="formNext('form_final');">Submit</button>
+        </div>
+      </form>
+
+      <form id="form_final" class="d-none">
+        <h5>Complete</h5>
+        <hr>
+        <div class="form-group">
+        <label for="comments" class="control-label">Thank you from Families in Action.</label>
+        </div>
         <br>
-        <label><input type="radio" name="first_time_registration" value="yes"> Yes</label><br>
-        <label><input type="radio" name="first_time_registration" value="no"> No</label><br>
-      </div>
-      <div class="form-group">
-      		<label for="important_1" class="control-label">What would you say are the three most important ways that FIA programs have impacted your life?</label>
-      		<input type="text" class="form-control" id="important_1" name="important_1"><br>
-          <input type="text" class="form-control" id="important_2" name="important_2"><br>
-          <input type="text" class="form-control" id="important_3" name="important_3"><br>
-    	</div>
-      <div class="form-group">
-          <label for="important_1" class="control-label">If you are a mom with children participating in FIA programs, what would you say are the three most important ways that FIA programs have impacted the life/lives of your child(ren)?</label>
-          <input type="text" class="form-control" id="child_important_1" name="child_important_1"><br>
-          <input type="text" class="form-control" id="child_important_2" name="child_important_2"><br>
-          <input type="text" class="form-control" id="child_important_3" name="child_important_3"><br>
-      </div>
-      <div class="form-group">
-          <label for="comments" class="control-label">Comments & Suggestions</label>
-          <input type="text" class="form-control" id="comments" name="comments"><br>
-      </div>
-
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary" onclick="formNext('form_final');">Submit</button>
-      </div>
-    </form>
-
-    <form id="form_final" class="d-none">
-      <h5>Complete</h5>
-      <hr>
-      <div class="form-group">
-      <label for="comments" class="control-label">Thank you from Families in Action.</label>
-      </div>
-      <br>
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary" onclick="window.location.reload();">Restart </button>
-      </div>
-    </form>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary" onclick="window.location.reload();">Restart </button>
+        </div>
+      </form>
 </div>
